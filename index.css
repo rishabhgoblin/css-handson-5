@@ -1,0 +1,449 @@
+body{
+    background-color: yellow;
+    /* border-left: 10px solid green ; */
+    margin: 0;
+    padding: 0;
+    z-index: 8;
+
+    
+   
+}
+#first-page{
+   width: 100%;
+    margin: auto;
+}
+
+#first-page-table{
+    margin: 10px 30px;
+}
+
+.row-all{
+    margin: 10px 30px;
+    padding: 30px;
+}
+/* Row Wise Margin */
+
+.row-margin{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+/* First Row */
+#rowone-cardone  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+#rowone-cardtwo  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+#rowone-cardthird  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+/* Second Row  */
+
+#rowtwo-cardone  {
+    height: 65px;
+    width:65px;
+    background-color: grey;
+}
+
+#rowtwo-cardtwo  {
+    height: 65px;
+    width:65px;
+    background-color: grey;
+}
+
+#rowtwo-cardthird  {
+    height: 65px;
+    width:65px;
+    background-color: grey;
+}
+
+/* Third row started */
+#rowthree-cardone  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+#rowthree-cardtwo  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+#rowthree-cardthird  {
+    height: 65px;
+    width:65px;
+    background-color: rgb(80, 109, 153);
+}
+
+/* Fourth Row */
+
+
+#rowfour-cardone  {
+    height: 53px;
+    width:53px;
+    background-color: rgb(80, 109, 153);
+    border: 6px solid rgb(80, 109, 153);
+}
+
+#rowfour-cardtwo  {
+    height: 53px;
+    width:53px;
+    background-color: rgb(138, 60, 60);
+    border: 6px solid rgb(138, 60, 60); ;
+}
+
+#rowfour-cardthird  {
+    height: 53px;
+    width:53px;
+    background-color: rgb(72, 126, 72);
+    border: 6px solid  rgb(72, 126, 72);;
+}
+
+/* Animation for first Page  First Row */
+
+#rowone-cardone , #rowone-cardtwo, #rowone-cardthird{
+    
+    animation-name: rowone_Pageone;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rowone_Pageone{
+ 0%{
+    transform: skewX(20deg);
+ }
+ 50%{
+    transform: skewX(-20deg);
+ }
+100%{
+    transform: skewX(20deg);
+}
+}
+
+/* Animation for first Page  Second Row */
+
+#rowtwo-cardone, #rowtwo-cardtwo , #rowtwo-cardthird{
+    animation-name: rowtwo_Pageone;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rowtwo_Pageone{
+    0%{
+       transform: skewY(20deg);
+    }
+    50%{
+       transform: skewY(-20deg);
+    }
+   100%{
+       transform: skewY(20deg);
+   }
+   }
+
+
+/* Animation for first Page  Third  Row */
+
+   #rowthree-cardone,#rowthree-cardtwo,#rowthree-cardthird{
+    animation-name: rowthree-Pageone;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes rowthree-Pageone{
+     from {transform:rotate(0deg)}
+     to{transform: rotate(360deg);}
+     
+   }
+
+
+   /* first Page  fourth row animation first card  */
+
+   #rowfour-cardone{
+    animation-name: rowfour_pageone-cardone;
+    animation-duration: 4s;
+   
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes rowfour_pageone-cardone{
+    from {transform: scaleY(.25);}
+  to {transform: scaleY(1)}
+   }
+
+
+ /* first Page  fourth row animation second Card   */
+   #rowfour-cardtwo{
+    animation-name: rowfour_pageone-cardtwo;
+    animation-duration: 4s;
+   
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes rowfour_pageone-cardtwo{
+    from {transform: scaleX(.25);}
+  to {transform: scaleX(1)}
+   }
+
+    /* first Page  fourth row animation third Card   */
+
+    #rowfour-cardthird{
+        animation-name: rowfour_pageone-cardthird;
+        animation-duration: 4s;
+       
+        animation-iteration-count: infinite;
+       }
+    
+       @keyframes rowfour_pageone-cardthird{
+        from {transform: rotate(0deg);}
+      to {transform: rotate(-90deg)}
+       }
+    
+
+/* Second Page Cards Tranfomation  */
+
+.seondPage_td{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(113, 205, 85);
+    
+}
+
+table.secondPageTable {
+    border-collapse: separate;
+    border-spacing: 20px 10px; 
+    margin-left: 40vw;
+
+  }
+
+
+
+#secondPage-FirstCard, #divA{
+    transition: width 2s;
+}
+#secondPage-FirstCard:hover, #divA:hover{
+    width: 30vw ;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+
+
+#secondPage-SecondCard, #divB{
+    transition: width 2s , height 3s;
+}
+
+#secondPage-SecondCard:hover, #divB:hover{
+    width: 28vw ;
+    height: 55vh;
+    transition-delay: 0.4s;
+    transition-timing-function: ease;
+
+}
+
+#secondPage-ThirdCard{
+    transition: width 2s;
+}
+
+
+#secondPage-ThirdCard:hover{
+    width: 30vw ;
+    transition-delay: 0.2s;
+    transition-timing-function: ease;
+}
+
+#secondPage-FourthCard{
+    transition: width 2s;
+}
+
+#secondPage-FourthCard:hover{
+    width: 30vw ;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+#secondPage-FifthCard{
+    transition: width 2s;
+}
+
+#secondPage-FifthCard:hover{
+    width: 30vw ;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#secondPage-SixthCard{
+    transition: width 2s;
+}
+
+#secondPage-SixthCard:hover{
+    width: 30vw ;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+#secondPage-SeventhCard{
+    transition: width 2s;
+}
+
+#secondPage-SeventhCard:hover{
+    width: 30vw ;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.headingOne{
+    margin-left: 45vw;
+}
+
+.secondPage-th{
+    vertical-align: super;
+}
+
+/* #tempdiv{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+} */
+
+
+/* Third Page animations  */
+#third-body{
+    background: url(./images/sky.jpg);
+    /* border-left: 10px solid green ; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+ #thirdPage-building-div{
+    background: url(./images/city\ \(1\).png);
+    background-repeat: repeat-x; 
+    
+     
+     
+    width: 900vw;     
+    /* padding-top: 45%;    */
+    height: 190vh;    
+    position: absolute;
+    top: 24%;
+    z-index: 2;
+    animation-name: City;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  
+} 
+
+#thirdPage-road-div{
+    background: url(./images/road.jpg);       
+    width: 900vw;
+    height: 43vh;
+    position:absolute;
+    background-repeat: repeat-x;     
+    top: 59%;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    /* top: 84%;
+     */
+    animation-name: Carmove;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#thirdpage-car{
+    background-image: url(./images/car.png);
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 30% 50%;
+    position:absolute;
+    top: 50%;
+    left: 30vw;
+    z-index: 4;
+}
+
+.backwheel img{
+    position: relative;
+    top: 82px;
+    width: 81px;
+    height: 81px;
+    left: 31px;
+    animation-name: wheelRotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.frontwheel img{
+    position: relative;
+    width: 81px;
+    height: 81px;   
+    left : 290px;
+    animation-name: wheelRotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.flag img{
+    height: 9vw;
+    position: absolute;
+    top: 47vh;
+    left: 52vw;
+    z-index: 7;
+}
+
+.sun img{
+    height: 150px;
+    width:150px;
+    position: absolute;
+    top: 5vh;
+    right: 9vw;
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheelRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes Carmove {
+    100%{
+        transform: translate(-30vw);
+    }
+    
+}
+
+@keyframes City {
+    100%{
+        transform: translate(-30vw);
+    }
+    
+}
+
+@keyframes sun {
+    100%{
+    transform:translate(-5vw);
+    }
+}
